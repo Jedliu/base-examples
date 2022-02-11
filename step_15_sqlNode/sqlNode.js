@@ -19,12 +19,12 @@ class SqlNode extends HtmlNode {
     for (let i = 0; i < fields.length; i++) {
       const item = fields[i];
       const itemElement = document.createElement("div");
-      itemElement.className = "table-feild";
+      itemElement.className = "table-field";
       const itemKey = document.createElement("span");
       itemKey.innerText = item.key;
       const itemType = document.createElement("span");
       itemType.innerText = item.type;
-      itemType.className = "feild-type";
+      itemType.className = "field-type";
       itemElement.appendChild(itemKey);
       itemElement.appendChild(itemType);
       fragment.appendChild(itemElement);
@@ -74,7 +74,7 @@ class SqlNodeModel extends HtmlNodeModel {
       properties: { fields }
     } = this;
     const anchors = [];
-    fields.forEach((feild, index) => {
+    fields.forEach((field, index) => {
       anchors.push({
         x: x - width / 2 + 10,
         y: y - height / 2 + 60 + index * 24,

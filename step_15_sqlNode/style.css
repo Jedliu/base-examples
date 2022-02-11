@@ -36,7 +36,7 @@
   background: #f5f5f5;
   font-size: 14px;
 }
-.table-feild {
+.table-field {
   height: 24px;
   line-height: 24px;
   font-size: 12px;
@@ -44,6 +44,6 @@
   justify-content: space-between;
   padding: 0 10px;
 }
-.feild-type {
+.field-type {
   color: #9f9c9f;
 }
